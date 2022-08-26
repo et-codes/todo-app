@@ -5,7 +5,8 @@ body {
 }
 
 .main-container {
-  margin: 32px;
+  margin: auto;
+  max-width: 800px;
   padding: 32px;
 }
 

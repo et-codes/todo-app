@@ -47,6 +47,9 @@ form {
 
 .todo-item label {
   flex: 1;
+  display: flex;
+  gap: 8px;
+  align-items: center;
 }
 
 .boxes {

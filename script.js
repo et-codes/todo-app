@@ -2,11 +2,13 @@ const addTodo = (event) => {
   // Append todo item onto the todo list
   event.preventDefault();
 
-  const todoTextInput = event.target.getElementsByClassName('text-input')[0];
-  const todoText = todoTextInput.value;
+  const todoTextInput = document.getElementById('text-input');
+  let todoText = todoTextInput.value;
+  if (!todoText) return;
+  if (todoText.length > 50) todoText = `${todoText.substring(0, 50)}...`;
   todoTextInput.value = '';
 
-  const divTodoList = document.getElementsByClassName('todo-list')[0];
+  const divTodoList = document.getElementById('todo-list');
   const divTodoItem = createTodo(todoText);
   divTodoList.appendChild(divTodoItem);
 }
@@ -48,5 +50,5 @@ const createTodo = (todoText) => {
   return divTodoItem;
 }
 
-document.getElementsByClassName('todo-form')[0]
-  .addEventListener('submit', addTodo);
+const todoForm = document.getElementById('todo-form')
+todoForm.addEventListener('submit', addTodo);

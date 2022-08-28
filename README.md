@@ -12,4 +12,4 @@ This is a simple task tracking app written with vanilla HTML, CSS, and JavaScrip
 
 Clicking the checkbox or the task text itself will check the box and apply ~~strike-through~~ styling to the text. Click it again to do the reverse. Click the trash can icon to remove an item from the list.
 
-**Author:** Eric Thornton | [LinkedIn](https://www.linkedin.com/in/ethornton/) | [Email](mailto:ericthornton43@gmail.com)
+**Author:** Eric Thornton | [LinkedIn](https://www.linkedin.com/in/ethornton/)
